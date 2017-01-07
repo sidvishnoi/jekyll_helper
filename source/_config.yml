@@ -1,0 +1,56 @@
+# config file for category generations
+
+name: "site name"
+author: "name of author"
+title: 'site title'
+description: "website description"
+url: "http://example.com"
+
+theme: minima
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  input: GFM
+  hard_wrap: false
+
+paginate: 3
+paginate_path: 'page/:num'
+
+feed:
+  path: '/feed.xml' # do not delete this, it is used in pagination also
+
+safe: false
+
+sass:
+  sass_dir: assets/css
+
+emptyArray: []
+
+jekyll-comments:
+  apiUrl: ""
+  # [REQUIRED] the url you received from Google Apps Script step, e.g.
+  # "apiUrl": "https://script.google.com/macros/s/AKfycbyTwxtrSxu...g5Guoj5KiKsPMyh4aXQ6c_/exec"
+  commentsDir: "source/_data/comments/"
+  # this is where are comments are saved,
+  # default: "_data/comments/"
+  logFile: ""
+  # this file will keep a list of files in which comments are updated, useful in partial builds.
+  # default: "jekyll-comments/comments.log"
+  saveAsmd5: False
+  # if True, the email ids in _data/comments/*.yml are saved as md5 hashes, useful if you make your _data/comments/*.yml public
+  # otherwise emails are stored as it is
+  # default: False
+  client_id: ""
+  # client ID obtained from Google Sign In API
+  # YOUR_CLIENT_ID.apps.googleusercontent.com
+  sort: "newest_first"
+  # comment sorting: "newest_first" or "oldest_first"
+
+gems:
+  - kramdown
+  - jekyll-paginate
+
+exclude: ['assets', 'feed.xslt.xml', 'favicon.ico', 'Gemfile', 'Gemfile.lock', 'robots.txt']

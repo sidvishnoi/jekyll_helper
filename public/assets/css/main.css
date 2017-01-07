@@ -1,0 +1,204 @@
+@charset "UTF-8";
+::-moz-selection {
+  color: #222;
+  background: #D6EDFF;
+  text-shadow: none; }
+
+::selection {
+  color: #222;
+  background: #D6EDFF;
+  text-shadow: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  line-height: 1.5em; }
+
+body {
+  font-family: Lato, "Proxima Nova Bold", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Calibri, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+  background: #eee url("/assets/img/bg.png"); }
+
+a {
+  text-decoration: none;
+  color: #f06; }
+
+img {
+  max-width: 100%; }
+
+h1, h2, h3, h4 {
+  font-family: Raleway, Lato, "Proxima Nova Bold", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Calibri, Arial, sans-serif; }
+
+h1 {
+  font-size: 1.8em;
+  line-height: 1.1em; }
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.2em; }
+  h2 a {
+    color: #222; }
+
+.align-center {
+  text-align: center; }
+
+.header {
+  padding-top: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+  background-color: #f06;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  width: 100%; }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none; }
+    @media (max-width: 769px) {
+      .header ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto; } }
+  .header a {
+    color: #000;
+    text-decoration: none; }
+  @media (max-width: 769px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto; } }
+
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: #000;
+  font-size: 0.99em;
+  opacity: 0.8; }
+  .main-nav a:hover {
+    opacity: 1; }
+
+.logo {
+  margin: 0;
+  font-size: 1.45em; }
+
+.main-nav {
+  margin-top: 5px; }
+
+.logo a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block; }
+
+main {
+  width: 100%;
+  background: #fff;
+  margin: 1em auto;
+  padding: 1em;
+  max-width: calc(100vw - 3em);
+  flex: 1;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative; }
+  main p:first-child {
+    background: #888;
+    position: relative;
+    left: -1em;
+    top: -1em;
+    width: calc(100% + 2em); }
+  main .post-title {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    margin: 0.5em 0 1em;
+    border-bottom: 4px solid #f06;
+    position: relative; }
+    main .post-title span {
+      font-size: 0.5em;
+      font-weight: 300;
+      text-transform: none;
+      color: #888;
+      position: absolute;
+      right: 0; }
+  main .post {
+    padding: 1em;
+    margin: 0 0 1em; }
+  main .post-body {
+    color: #000;
+    padding: 1em; }
+    main .post-body h1 {
+      font-size: 1.4em; }
+    main .post-body h2 {
+      font-size: 1.2em; }
+    main .post-body h3 {
+      font-size: 1.1em;
+      text-transform: uppercase; }
+    main .post-body h2, main .post-body h3, main .post-body h4 {
+      margin: 0.8em 0; }
+    main .post-body img {
+      background: #000;
+      display: block;
+      margin: 0 auto; }
+    main .post-body a {
+      color: #f06; }
+    main .post-body p + p {
+      margin: 0.8em auto; }
+    main .post-body p:first-child {
+      font-style: italic;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      color: rgba(0, 0, 0, 0.85); }
+    main .post-body strong {
+      font-weight: 700; }
+    main .post-body code {
+      font-size: 0.9em;
+      font-weight: 700; }
+    main .post-body pre {
+      padding: 1em;
+      background: #eee;
+      border-top: 4px solid #eee;
+      border-bottom: 4px solid #eee;
+      margin: 0.2em 0; }
+    main .post-body ul, main .post-body ol {
+      margin: 1em 0; }
+      @media screen and (max-width: 640px) {
+        main .post-body ul, main .post-body ol {
+          margin: 1em; } }
+    main .post-body blockquote {
+      background: #f9f9f9;
+      border-left: 10px solid #ccc;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      quotes: "“" "”" "‘" "’"; }
+      main .post-body blockquote ul, main .post-body blockquote li {
+        margin-left: 1em; }
+      main .post-body blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 6em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em; }
+
+.pagination {
+  display: flex;
+  text-align: center; }
+  .pagination span {
+    flex: 1; }
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 1em; }
