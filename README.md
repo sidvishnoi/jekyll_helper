@@ -56,6 +56,14 @@ See details in [WIKI](https://github.com/sidvishnoi/jekyll_helper/wiki).
 
 See option details and setup details in [WIKI](https://github.com/sidvishnoi/jekyll_helper/wiki).
 
+
+## Usage
+
+``` bash
+$ cd path/to/project/
+$ python helper.py [OPTIONS]
+```
+
 ## Contribute
 
 This is just a sample script, made to share the ideas how to make the builds efficient. You can create your own methods, or contribute to make this one better.
