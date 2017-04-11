@@ -1,6 +1,6 @@
 '''
 Jekyll Helper by Sid Vishnoi
-https://github.com/sid-vishnoi/jekyll-helper/
+https://github.com/sidvishnoi/jekyll_helper/
 '''
 import os
 import argparse
